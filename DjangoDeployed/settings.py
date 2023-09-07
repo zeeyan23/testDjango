@@ -25,12 +25,13 @@ SECRET_KEY = 'ae4xmu2z(t(9rxpm%8x%4fq5(auo!3jpe53oi@_3yq!yq$4514'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'folder_name'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -67,8 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DjangoDeployed.wsgi.application'
-
+# WSGI_APPLICATION = 'DjangoDeployed.wsgi.application'
+WSGI_APPLICATION = 'DjangoDeployed.wsgi.app'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
